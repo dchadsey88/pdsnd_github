@@ -197,6 +197,10 @@ def display_data(df):
     while True:
 
         more_data = input('\nWould you like to show the next 5 rows of data?  Enter yes or no.\n')
+        if more_data == "y":
+            more_data = "yes"
+        if more_data == "n":
+            more_data = "no"
         if more_data == "no":
             break
         else:
