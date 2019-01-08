@@ -1,14 +1,16 @@
 ### Date created
-Include the date you created this project and README file.
+This project was created December 2018
 
 ### Project Title
-Replace the Project Title
+Bike Share Analysis
 
 ### Description
-Describe what your project is about and what it does
+This project analyzes bike share data from 3 cities, NYC, Washington DC, and Chicago.
 
 ### Files used
-Include the files used
+washington.csv
+new_york_city.csv
+chicago.csv
 
 ### Credits
-consulted posted on Stack Overflow as well as git-scm.com
+consulted posts on Stack Overflow as well as git-scm.com
