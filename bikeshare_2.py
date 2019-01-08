@@ -106,9 +106,6 @@ def time_stats(df):
 
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
-
-
-
     # display the most common month
     most_common_month = df['Month'].mode()[0]
     most_common_month = calendar.month_name[most_common_month]
@@ -154,10 +151,10 @@ def trip_duration_stats(df):
 
     # display total travel time
     total_travel_time = df['Trip Duration'].sum()
-    print('The total travel time is:',total_travel_time, "minutes.")
+    print('The total travel time is: {} minutes.''.format(total_travel_time))
     # display mean travel time
     average_travel_time = df['Trip Duration'].mean()
-    print('The average travel time is:',average_travel_time, "minutes.")
+    print('The average travel time is: {} minutes.'.format(average_travel_time))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
@@ -197,8 +194,6 @@ def display_data(df):
     while True:
 
         more_data = input('\nWould you like to show the next 5 rows of data?  Enter yes or no.\n')
-        if more_data == "y":
-            more_data = "yes"
         if more_data == "n":
             more_data = "no"
         if more_data == "no":
