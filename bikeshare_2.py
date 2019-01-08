@@ -179,11 +179,11 @@ def user_stats(df):
             print('The number of',i ,'users is ', gender[i])
         # Display earliest, most recent, and most common year of birth
         earliest_dob = df['Birth Year'].min()
-        print('The earliest year of birth is:',earliest_dob)
+        print('The earliest year of birth is: {}.'.format(earliest_dob))
         most_recent_dob = df['Birth Year'].max()
-        print('The most recent year of birth is:',most_recent_dob)
+        print('The most recent year of birth is: {}.'.format(most_recent_dob))
         most_common_dob = df['Birth Year'].mode()
-        print('The most common year of birth is:',most_common_dob)
+        print('The most common year of birth is: {}.'.format(most_common_dob))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
