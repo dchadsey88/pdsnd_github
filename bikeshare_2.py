@@ -83,6 +83,7 @@ def load_data(city, month, day):
     Returns:
         df - Pandas DataFrame containing city data filtered by month and day
     """
+    #uses datetime to change df date into datetime to be able to sort by users input
     df = pd.read_csv(CITY_DATA[city])
     df['Start Time'] = pd.to_datetime(df['Start Time'])
     df['Month'] = df['Start Time'].dt.month
@@ -93,6 +94,7 @@ def load_data(city, month, day):
         month = months.index(month) + 1
         df = df.loc[df['Month'] == month]
 
+#turns users input for day of week into number to mathch df
     if day != 'all':
         days = ['monday','tuesday','wednesday','thursday','friday','saturday','sunday']
         day = days.index(day)
